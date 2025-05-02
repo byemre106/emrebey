@@ -2,6 +2,7 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emre'nin Çiftliği</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <style>
@@ -13,28 +14,50 @@
       background-repeat: repeat;
       background-size: 100px 100px;
     }
-    .header-wrapper {
-      background-color: rgba(255, 255, 255, 0.7); /* Şeffaf beyaz arka plan */
-      padding: 20px;
-      border-radius: 12px;
+
+    .header-wrapper, .container {
+      width: 100%;
       max-width: 700px;
       margin: 20px auto;
-      text-align: center;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     }
+
     h1 {
       color: #1b4332;
       font-size: 40px;
       margin: 0;
       font-family: 'Pacifico', cursive;
+      text-align: center;
     }
-    .container {
-      background: rgba(255, 255, 255, 0.9);
-      padding: 30px;
-      border-radius: 12px;
-      max-width: 700px;
-      margin: auto;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+    .product-image {
+      width: 100%;
+      max-height: 300px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      object-fit: cover;
     }
+
+    .product-info {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .product-info p {
+      margin: 8px 0;
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 50px;
+      color: #2d6a4f;
+      text-align: center;
+    }
+
     .whatsapp-button {
       display: block;
       background: #25d366;
@@ -43,32 +66,33 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      margin-top: 20px;
+      margin: 20px 0;
       text-align: center;
       transition: background 0.3s ease;
     }
+
     .whatsapp-button:hover {
       background: #1ebe5d;
     }
-    .product-image {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 15px;
-      object-fit: cover;
-    }
-    .product-info {
-      text-align: center;
-      font-size: 18px;
-    }
-    .product-info p {
-      margin: 8px 0;
-    }
-    .section-title {
-      font-size: 24px;
-      font-weight: bold;
-      margin-top: 50px;
-      color: #2d6a4f;
-      text-align: center;
+
+    /* === Mobil için media query === */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      .product-info {
+        font-size: 16px;
+      }
+
+      .section-title {
+        font-size: 20px;
+      }
+
+      body {
+        padding: 10px;
+        background-size: 80px 80px;
+      }
     }
   </style>
 </head>
