@@ -3,71 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emre'nin Çiftliği - Güvercin Satış ve Alım</title>
-  <meta name="description" content="Emre'nin çiftliğinden satın alabileceğiniz güvercinler ve alım satım işlemleri hakkında bilgi edinin.">
-  <meta name="keywords" content="güvercin, satılık güvercin, bıldırcın, çiftlik, emre'nin çiftliği, taklacı güvercini, posta güvercini, saya güvercini, dönek güvercini, hünkari güvercini">
+  <title>Emre'nin Çiftliği</title>
+  <meta name="description" content="Emre'nin ürün ve sipariş sayfası. Kaliteli üretim ve güvenilir hizmet.">
+  <meta name="keywords" content="emre, ürün, sipariş, bıldırcın, güvercin, çiftlik, doğal">
   <meta name="author" content="Emre">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: 20px;
       margin: 0;
-      background-color: #f4f4f9;
+      background-color: #f7f7f7; /* Sade ve temiz bir arka plan */
     }
 
     .header-wrapper {
+      background-color: #2d6a4f;
+      color: white;
       text-align: center;
-      margin: 20px;
+      padding: 20px 0;
+      font-family: 'Pacifico', cursive;
     }
 
     h1 {
-      color: #2d6a4f;
-      font-size: 40px;
       margin: 0;
+      font-size: 40px;
     }
 
-    .product-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .product {
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 30px;
       background-color: white;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      width: 250px;
-      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     }
 
-    .product img {
+    .product-image {
       width: 100%;
+      max-height: 250px; /* Görsellerin boyutunu küçültme */
       border-radius: 8px;
+      margin-bottom: 15px;
+      object-fit: cover;
     }
 
-    .product h3 {
-      color: #1b4332;
-      font-size: 20px;
-      margin-top: 10px;
-    }
-
-    .product p {
+    .product-info {
+      text-align: center;
+      font-size: 18px;
       color: #333;
-      margin: 5px 0;
+    }
+
+    .product-info p {
+      margin: 8px 0;
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 50px;
+      color: #2d6a4f;
+      text-align: center;
+      margin-bottom: 30px;
     }
 
     .whatsapp-button {
       display: block;
       background: #25d366;
       color: white;
-      padding: 10px;
+      padding: 12px 20px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      margin-top: 10px;
+      margin: 20px 0;
       text-align: center;
       transition: background 0.3s ease;
     }
@@ -76,82 +81,126 @@
       background: #1ebe5d;
     }
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 30px;
-      }
-
-      .product {
-        width: 200px;
-      }
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 40px;
     }
+
+    .product-item {
+      width: 270px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .product-item img {
+      width: 100%;
+      max-width: 230px; /* Görselleri biraz daha küçültüyoruz */
+      border-radius: 8px;
+    }
+
+    .product-item h3 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .footer {
+      background-color: #2d6a4f;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Flexbox düzeni için stil */
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .flex-item {
+      width: 48%; /* Yan yana olmak için %50'lik genişlik */
+      box-sizing: border-box;
+    }
+
   </style>
 </head>
 <body>
 
   <div class="header-wrapper">
-    <h1>Emre'nin Çiftliği - Güvercin Satış ve Alım</h1>
+    <h1>Emre'nin Çiftliği</h1>
   </div>
 
-  <div class="product-wrapper">
-    <div class="product">
-      <img src="https://www.petmix.com.tr/storage/2023/12/mardin-guvercini-300x300.png" alt="Taklacı Güvercini (Mardin Güvercini)">
-      <h3>Taklacı Güvercini (Mardin Güvercini)</h3>
-      <p>Güçlü yapısı ve estetik görünümü ile taklacı güvercinleri. Uygun fiyatla satıyoruz.</p>
-      <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20Taklacı%20Güvercini%20satın%20almak%20istiyorum!" target="_blank">WhatsApp ile Sipariş Ver</a>
-    </div>
+  <!-- Bıldırcın Yumurtası ve Bıldırcın Alım-Satımı Yan Yana -->
+  <div class="container">
+    <h2 class="section-title">Bıldırcın Yumurtası ve Bıldırcın Alım-Satımı</h2>
+    <div class="flex-container">
+      
+      <!-- Bıldırcın Yumurtası Bölümü -->
+      <div class="flex-item">
+        <h3>Bıldırcın Yumurtası</h3>
+        <img class="product-image" src="https://www.turkchem.net/wp-content/uploads/2022/02/AW544933_02.jpg" alt="Bıldırcın Yumurtası">
+        <div class="product-info">
+          <p>🌿 <strong>Bıldırcın Yumurtası</strong></p>
+          <p><strong>Fiyat:</strong> İletişime geçiniz</p>
+          <p><strong>Ürün Açıklaması:</strong> Sağlıklı ve doğal bıldırcın yumurtaları. Taze, organik ve lezzetli!</p>
+        </div>
+        <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20bıldırcın%20yumurtası%20siparişi%20vermek%20istiyorum!" target="_blank">
+          WhatsApp ile Sipariş Ver
+        </a>
+      </div>
 
-    <div class="product">
-      <img src="https://www.petmix.com.tr/storage/2023/12/posta-guvercini-300x300.jpg" alt="Posta Güvercini">
-      <h3>Posta Güvercini</h3>
-      <p>Posta güvercinleri, mektup taşıma geleneğiyle tanınır. Alım-satımı için bizimle iletişime geçin.</p>
-      <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20Posta%20Güvercini%20satın%20almak%20istiyorum!" target="_blank">WhatsApp ile Sipariş Ver</a>
-    </div>
+      <!-- Bıldırcın Alım-Satımı Bölümü -->
+      <div class="flex-item">
+        <h3>Bıldırcın Alım-Satımı</h3>
+        <img class="product-image" src="https://www.turkchem.net/wp-content/uploads/2022/02/AW544933_02.jpg" alt="Bıldırcın Alım Satımı">
+        <div class="product-info">
+          <p><strong>Bıldırcın almak veya satmak için bizimle iletişime geçebilirsiniz.</strong></p>
+        </div>
+        <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20bıldırcın%20alım-satımı%20hakkında%20bilgi%20almak%20istiyorum." target="_blank">
+          WhatsApp ile Bilgi Al
+        </a>
+      </div>
 
-    <div class="product">
-      <img src="https://www.petmix.com.tr/storage/2023/12/saya-guvercini-300x300.jpg" alt="Saya (Kelebek) Güvercini">
-      <h3>Saya (Kelebek) Güvercini</h3>
-      <p>Estetik ve nazik hareketleriyle dikkat çeken saya güvercinleri.</p>
-      <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20Saya%20Güvercini%20satın%20almak%20istiyorum!" target="_blank">WhatsApp ile Sipariş Ver</a>
     </div>
+  </div>
 
-    <div class="product">
-      <img src="https://www.petmix.com.tr/storage/2023/12/donek-guvercini-300x300.png" alt="Dönek (Selanik) Güvercini">
-      <h3>Dönek (Selanik) Güvercini</h3>
-      <p>Hareketli ve enerjik dönek güvercinler. Fiyat için bizimle iletişime geçin.</p>
-      <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20Dönek%20Güvercini%20satın%20almak%20istiyorum!" target="_blank">WhatsApp ile Sipariş Ver</a>
-    </div>
-
-    <div class="product">
-      <img src="https://www.petmix.com.tr/storage/2023/12/hunkari-guvercin-300x300.png" alt="Hünkari Güvercini">
-      <h3>Hünkari Güvercini</h3>
-      <p>Özel renkleriyle hünkari güvercinleri, koleksiyoncular için harika bir seçenek.</p>
-      <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20Hünkari%20Güvercini%20satın%20almak%20istiyorum!" target="_blank">WhatsApp ile Sipariş Ver</a>
-    </div>
-
-    <div class="product">
-      <img src="https://www.petmix.com.tr/storage/2023/12/karakanat-misiri-guvercini-300x300.png" alt="Mısıri Güvercini">
-      <h3>Mısıri Güvercini</h3>
-      <p>Uzun kanatlarıyla mısıri güvercinleri, estetik ve güçlü yapılarıyla dikkat çeker.</p>
-      <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20Mısıri%20Güvercini%20satın%20almak%20istiyorum!" target="_blank">WhatsApp ile Sipariş Ver</a>
-    </div>
-
-    <div class="product">
-      <img src="https://www.petmix.com.tr/storage/2023/12/bango-guvercin-300x300.png" alt="Bango (Baska) Güvercini">
-      <h3>Bango (Baska) Güvercini</h3>
-      <p>Güzel ve güçlü bir yapıya sahip bango güvercinleri. Sipariş için bizimle iletişime geçin.</p>
-      <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20Bango%20Güvercini%20satın%20almak%20istiyorum!" target="_blank">WhatsApp ile Sipariş Ver</a>
-    </div>
-
-    <div class="product">
-      <img src="https://www.petmix.com.tr/storage/2023/12/azman-guvercin-300x300.png" alt="Azman Güvercini">
-      <h3>Azman Güvercini</h3>
-      <p>Farklı renk ve desenleriyle azman güvercinleri. Satın almak için bize ulaşabilirsiniz.</p>
-      <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20Azman%20Güvercini%20satın%20almak%20istiyorum!" target="_blank">WhatsApp ile Sipariş Ver</a>
-    </div>
-
-    <div class="product">
-      <img src="https://www.petmix.com.tr/storage/2023/12/deste-kuyruk-300x300.png" alt="Deste (Yelpaze) Kuyruk Güvercini">
-      <h3>Deste (Yelpaze) Kuyruk Güvercini</h3>
-      <p>Uzun kuyruklarıyla dikkat çeken deste güvercinleri, estetik bir tercihtir.</p>
-      <
+  <!-- Güvercin Cinsleri Bölümü -->
+  <div class="container">
+    <h2 class="section-title">Güvercin Cinsleri</h2>
+    <div class="product-container">
+      <!-- Taklacı Güvercini -->
+      <div class="product-item">
+        <h3>1. Taklacı Güvercini (Mardin Güvercini)</h3>
+        <img src="https://www.petmix.com.tr/storage/2023/12/mardin-guvercini-300x300.png" alt="Taklacı Güvercini">
+        <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20Taklacı%20güvercini%20almak%20istiyorum." target="_blank">
+          WhatsApp ile Bilgi Al
+        </a>
+      </div>
+      <!-- Posta Güvercini -->
+      <div class="product-item">
+        <h3>2. Posta Güvercini</h3>
+        <img src="https://www.petmix.com.tr/storage/2023/12/posta-guvercini-300x300.jpg" alt="Posta Güvercini">
+        <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20Posta%20güvercini%20almak%20istiyorum." target="_blank">
+          WhatsApp ile Bilgi Al
+        </a>
+      </div>
+      <!-- Saya (Kelebek) Güvercini -->
+      <div class="product-item">
+        <h3>3. Saya (Kelebek) Güvercini</h3>
+        <img src="https://www.petmix.com.tr/storage/2023/12/saya-guvercini-300x300.jpg" alt="Saya Güvercini">
+        <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20Saya%20(kelebek)%20güvercini%20almak%20istiyorum." target="_blank">
+          WhatsApp ile Bilgi Al
+        </a>
+      </div>
+      <!-- Dönek (Selanik) Güvercini -->
+      <div class="product-item">
+        <h3>4. Dönek (Selanik) Güvercini</h3>
+        <img src="https://www.petmix.com.tr/storage/2023/12/donek-guvercini-300x300.png" alt="Dönek Güvercini">
+        <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20Dönek%20(Selanik)%20
