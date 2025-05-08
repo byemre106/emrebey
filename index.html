@@ -2,256 +2,82 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emre'nin Çiftliği</title>
-  <meta name="description" content="Emre'nin ürün ve sipariş sayfası. Kaliteli üretim ve güvenilir hizmet.">
-  <meta name="keywords" content="emre, ürün, sipariş, bıldırcın, güvercin, çiftlik, doğal">
+  <title>Emre'nin Çiftliği - Doğal Bıldırcın Ürünleri</title>
+  <meta name="description" content="Emre'nin Çiftliği - Taze bıldırcın yumurtası, eti ve canlı bıldırcın alım satımı. Sağlıklı ve doğal üretim.">
+  <meta name="keywords" content="bıldırcın yumurtası, bıldırcın eti, bıldırcın alım satımı, doğal üretim, Erzurum çiftlik, sağlıklı beslenme, organik ürünler">
   <meta name="author" content="Emre">
-  <title>Emre'nin Yumurtacı Çiftliği | Günlük 6000 Yumurta Üretimi</title>
-  <meta name="description" content="Erzurum'da günlük 6000 adet bıldırcın yumurtası üretimi yapan Emre'nin çiftliği. Doğal, sağlıklı ve toptan yumurta satışları burada.">
-
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: 20px;
-      margin: 0;
-      background-image: url('https://www.slimcity.com.tr/wp-content/uploads/BILDIRCIN-YUMURTASI.jpg');
-      background-repeat: repeat;
-      background-size: 100px 100px;
-    }
-
-    .header-wrapper, .container {
-      width: 100%;
-      max-width: 700px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.9);
-      border-radius: 12px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    }
-
-    h1 {
-      color: #1b4332;
-      font-size: 40px;
-      margin: 0;
-      font-family: 'Pacifico', cursive;
-      text-align: center;
-    }
-
-    .product-image {
-      width: 100%;
-      max-height: 300px;
-      border-radius: 8px;
-      margin-bottom: 15px;
-      object-fit: cover;
-    }
-
-    .product-info {
-      text-align: center;
-      font-size: 18px;
-    }
-
-    .product-info p {
-      margin: 8px 0;
-    }
-
-    .section-title {
-      font-size: 24px;
-      font-weight: bold;
-      margin-top: 50px;
-      color: #2d6a4f;
-      text-align: center;
-    }
-
-    .whatsapp-button {
-      display: block;
-      background: #25d366;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 20px 0;
-      text-align: center;
-      transition: background 0.3s ease;
-    }
-
-    .whatsapp-button:hover {
-      background: #1ebe5d;
-    }
-
-    /* === Mobil için media query === */
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 28px;
-      }
-
-      .product-info {
-        font-size: 16px;
-      }
-
-      .section-title {
-        font-size: 20px;
-      }
-
-      body {
-        padding: 10px;
-        background-size: 80px 80px;
-      }
-    }
-
-    /* Modal için stil */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0, 0, 0, 0.4);
-      padding-top: 60px;
-    }
-
-    .modal-content {
-      background-color: #fff;
-      margin: 5% auto;
-      padding: 20px;
-      border: 1px solid #888;
-      width: 80%;
-      max-width: 400px;
-    }
-
-    .close {
-      color: #aaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-      color: black;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    textarea {
-      width: 100%;
-      height: 100px;
-      padding: 10px;
-      font-size: 16px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: #007BFF;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 16px;
-      transition: background-color 0.3s;
-    }
-
-    .btn:hover {
-      background-color: #0056b3;
-    }
-  </style>
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#2d6a4f">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src *; style-src 'self' 'unsafe-inline'; script-src 'self';">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="canonical" href="https://emreninciftligi.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <div class="header-wrapper">
-    <h1>Emre'nin Çiftliği</h1>
-  </div>
+  <header>
+    <h1>Emre'nin Çiftliği - Doğal Bıldırcın Ürünleri</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Ana Sayfa</a></li>
+        <li><a href="#yumurta">Bıldırcın Yumurtası</a></li>
+        <li><a href="#etin-faydalari">Bıldırcın Eti</a></li>
+        <li><a href="#alim-satim">Bıldırcın Alım Satımı</a></li>
+        <li><a href="#hakkimizda">Hakkımızda</a></li>
+        <li><a href="#sorular">Sıkça Sorulan Sorular</a></li>
+        <li><a href="#yorumlar">Müşteri Yorumları</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="container">
-    <!-- Bıldırcın Yumurtası -->
-    <img class="product-image" src="https://i.lezzet.com.tr/images-xxlarge-secondary/bildircin-yumurtasi-nasil-yenir-nasil-pisirilir-4380382c-5c5d-4e97-ae88-76fda3fb44b6.jpg" alt="Bıldırcın Yumurtası">
-    <div class="product-info">
-      <p>🌿 <strong>Taze Bıldırcın Yumurtası</strong></p>
-      <p><strong>Ürün Açıklaması:</strong> Sağlıklı ve doğal bıldırcın yumurtaları. Taze, organik ve lezzetli!</p>
-    </div>
-    <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20sipariş%20vermek%20istiyorum!" target="_blank">
-      WhatsApp ile Sipariş Ver
-    </a>
+  <main>
+    <section id="yumurta">
+      <h2>Taze Bıldırcın Yumurtası</h2>
+      <p>Günlük 6000 üretim kapasitesiyle doğal ve sağlıklı bıldırcın yumurtaları.</p>
+      <a href="https://wa.me/905539210791?text=Merhaba,%20bıldırcın%20yumurtası%20siparişi%20vermek%20istiyorum!" target="_blank">WhatsApp ile Sipariş Ver</a>
+    </section>
 
-    <!-- Bıldırcın Alımı -->
-    <p class="section-title">Bıldırcın Satışı</p>
-    <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20bıldırcın%20satmak%20istiyorum." target="_blank">
-      WhatsApp ile Bıldırcın Satışı Yap
-    </a>
+    <section id="etin-faydalari">
+      <h2>Bıldırcın Eti</h2>
+      <p>Besleyici ve doğal bıldırcın eti. Protein deposu, lezzetli ve sağlıklı.</p>
+      <a href="#">Bıldırcın Etinin Faydaları</a>
+    </section>
 
-    <!-- Canlı Bıldırcın -->
-    <p class="section-title">Canlı Bıldırcın</p>
-    <img class="product-image" src="https://cdn.download.ams.birds.cornell.edu/api/v2/asset/241998281/900" alt="Canlı Bıldırcın">
-    <div class="product-info">
-      <p><strong>Canlı bıldırcın için iletişime geçiniz.</strong></p>
-    </div>
-    <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20canlı%20bıldırcın%20hakkında%20bilgi%20almak%20istiyorum." target="_blank">
-      WhatsApp ile Bilgi Al
-    </a>
+    <section id="alim-satim">
+      <h2>Bıldırcın Alım Satımı</h2>
+      <div>
+        <h3>Bıldırcın Satmak İster misiniz?</h3>
+        <a href="https://wa.me/905539210791?text=Merhaba,%20bıldırcın%20satmak%20istiyorum." target="_blank">Bize Satın</a>
+      </div>
+      <div>
+        <h3>Bıldırcın Almak İstiyorum</h3>
+        <a href="https://wa.me/905539210791?text=Merhaba,%20bıldırcın%20almak%20istiyorum." target="_blank">Bizden Alın</a>
+      </div>
+    </section>
 
-    <!-- Yorum Gönder -->
-    <a href="#" class="whatsapp-button" id="openModal">Yorum Gönder</a>
-  </div>
+    <section id="yorumlar">
+      <h2>Müşteri Yorumları</h2>
+      <a href="https://t.me/EmreninCiftligi" target="_blank">Telegram Yorumlarına Katıl</a>
+    </section>
 
-  <!-- Yorum Modal Penceresi -->
-  <div id="commentModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Yorumunuzu Yazın:</h2>
-      <textarea id="userComment" placeholder="Yorumunuzu buraya yazın..."></textarea>
-      <br>
-      <button id="sendComment" class="whatsapp-button">Yorum Gönder</button>
-      <p>Veya Telegram üzerinden de yorum bırakabilirsiniz: 
-          <a href="https://t.me/EmreninCiftligi" target="_blank">Telegram Kanalı</a>
-      </p>
-    </div>
-  </div>
+    <section id="hakkimizda">
+      <h2>Hakkımızda</h2>
+      <p>Erzurum'da günlük 6000 adet bıldırcın yumurtası üreten Emre'nin Çiftliği, doğal ve sağlıklı ürünler sunar. Bıldırcın yumurtası, eti ve canlı bıldırcın alım satımı yapılır.</p>
+    </section>
 
-  <script>
-    // Modalı açma ve kapama işlemleri
-    var modal = document.getElementById("commentModal");
-    var btn = document.getElementById("openModal");
-    var span = document.getElementsByClassName("close")[0];
-    var sendButton = document.getElementById("sendComment");
+    <section id="sorular">
+      <h2>Sıkça Sorulan Sorular</h2>
+      <p>Burada müşterilerin en sık sorduğu sorulara yer verilecek.</p>
+    </section>
+  </main>
 
-    // Modalı aç
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
-
-    // Modalı kapat
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-
-    // Modal dışında bir yere tıklanırsa da kapansın
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-
-    // Yorum Gönder butonuna tıklayınca, Telegram linkini oluştur
-    sendButton.onclick = function() {
-      var comment = document.getElementById("userComment").value;
-      if (comment) {
-        var message = encodeURIComponent(comment);  // Yorumun URL formatında olmasını sağlar
-        var telegramLink = "https://t.me/EmreninCiftligi?text=" + message;  // Telegram linki
-        window.open(telegramLink, "_blank");  // Telegram açılır
-        modal.style.display = "none";  // Modalı kapat
-      } else {
-        alert("Lütfen bir yorum girin.");
-      }
-    }
-  </script>
+  <footer>
+    <p>&copy; 2025 Emre'nin Çiftliği. Tüm Hakları Saklıdır.</p>
+  </footer>
 
 </body>
 </html>
