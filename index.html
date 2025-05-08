@@ -2,27 +2,14 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emre'nin Çiftliği - Doğal Bıldırcın Ürünleri</title>
-  <meta name="description" content="Erzurum'da günlük 6000 bıldırcın yumurtası üretimi yapan Emre'nin Çiftliği. Doğal bıldırcın eti, yumurtası ve alım satımı.">
-  <meta name="keywords" content="bıldırcın yumurtası, bıldırcın eti, bıldırcın alım satımı, doğal üretim, organik ürünler, sağlıklı beslenme">
+  <title>Emre'nin Çiftliği</title>
+  <meta name="description" content="Emre'nin ürün ve sipariş sayfası. Kaliteli üretim ve güvenilir hizmet.">
+  <meta name="keywords" content="emre, ürün, sipariş, bıldırcın, güvercin, çiftlik, doğal">
   <meta name="author" content="Emre">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#2d6a4f">
-  <meta property="og:title" content="Emre'nin Çiftliği - Doğal Bıldırcın Ürünleri">
-  <meta property="og:description" content="Doğal bıldırcın ürünleri. Günlük 6000 bıldırcın yumurtası üretimi. Alım satım fırsatları için hemen iletişime geçin.">
-  <meta property="og:image" content="https://i.lezzet.com.tr/images-xxlarge-secondary/bildircin-yumurtasi-nasil-yenir-nasil-pisirilir-4380382c-5c5d-4e97-ae88-76fda3fb44b6.jpg">
-  <meta property="og:url" content="https://emreninciftligi.com">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Emre'nin Çiftliği - Doğal Bıldırcın Ürünleri">
-  <meta name="twitter:description" content="Doğal bıldırcın ürünleri. Günlük 6000 bıldırcın yumurtası üretimi.">
-  <meta name="twitter:image" content="https://i.lezzet.com.tr/images-xxlarge-secondary/bildircin-yumurtasi-nasil-yenir-nasil-pisirilir-4380382c-5c5d-4e97-ae88-76fda3fb44b6.jpg">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="canonical" href="https://emreninciftligi.com">
+  <title>Emre'nin Yumurtacı Çiftliği | Günlük 6000 Yumurta Üretimi</title>
+  <meta name="description" content="Erzurum'da günlük 6000 adet bıldırcın yumurtası üretimi yapan Emre'nin çiftliği. Doğal, sağlıklı ve toptan yumurta satışları burada.">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -32,7 +19,8 @@
       background-repeat: repeat;
       background-size: 100px 100px;
     }
-    .container {
+
+    .header-wrapper, .container {
       width: 100%;
       max-width: 700px;
       margin: 20px auto;
@@ -41,19 +29,15 @@
       border-radius: 12px;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     }
+
     h1 {
       color: #1b4332;
       font-size: 40px;
-      margin-bottom: 20px;
+      margin: 0;
       font-family: 'Pacifico', cursive;
       text-align: center;
     }
-    .section-title {
-      font-size: 24px;
-      color: #2d6a4f;
-      text-align: center;
-      margin-top: 40px;
-    }
+
     .product-image {
       width: 100%;
       max-height: 300px;
@@ -61,43 +45,139 @@
       margin-bottom: 15px;
       object-fit: cover;
     }
+
+    .product-info {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .product-info p {
+      margin: 8px 0;
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 50px;
+      color: #2d6a4f;
+      text-align: center;
+    }
+
     .whatsapp-button {
+      display: block;
       background: #25d366;
       color: white;
-      padding: 10px 20px;
+      padding: 12px 20px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      display: block;
-      margin: 10px 0;
+      margin: 20px 0;
       text-align: center;
+      transition: background 0.3s ease;
     }
+
     .whatsapp-button:hover {
       background: #1ebe5d;
+    }
+
+    /* === Mobil için media query === */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      .product-info {
+        font-size: 16px;
+      }
+
+      .section-title {
+        font-size: 20px;
+      }
+
+      body {
+        padding: 10px;
+        background-size: 80px 80px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+
+  <div class="header-wrapper">
     <h1>Emre'nin Çiftliği</h1>
-
-    <h2 class="section-title">Bıldırcın Yumurtası</h2>
-    <img class="product-image" src="https://i.lezzet.com.tr/images-xxlarge-secondary/bildircin-yumurtasi-nasil-yenir-nasil-pisirilir-4380382c-5c5d-4e97-ae88-76fda3fb44b6.jpg" alt="Bıldırcın Yumurtası">
-    <a class="whatsapp-button" href="https://wa.me/905539210791?text=Bıldırcın%20yumurtası%20almak%20istiyorum." target="_blank">WhatsApp ile Sipariş Ver</a>
-
-    <h2 class="section-title">Bıldırcın Eti</h2>
-    <img class="product-image" src="https://cdn.download.ams.birds.cornell.edu/api/v2/asset/241998281/900" alt="Bıldırcın Eti">
-    <a class="whatsapp-button" href="https://wa.me/905539210791?text=Bıldırcın%20eti%20almak%20istiyorum." target="_blank">WhatsApp ile Bilgi Al</a>
-
-    <h2 class="section-title">Bıldırcın Alım Satımı</h2>
-    <a class="whatsapp-button" href="https://wa.me/905539210791?text=Bıldırcın%20satmak%20istiyorum." target="_blank">Bıldırcın Sat</a>
-    <a class="whatsapp-button" href="https://wa.me/905539210791?text=Bıldırcın%20almak%20istiyorum." target="_blank">Bıldırcın Al</a>
-
-    <h2 class="section-title">Müşteri Yorumları</h2>
-    <a class="whatsapp-button" href="https://t.me/EmreninCiftligi" target="_blank">Telegram'dan Yorum Yap</a>
-
-    <h2 class="section-title">Sıkça Sorulan Sorular</h2>
-    <p>Merak ettikleriniz için bizimle iletişime geçebilirsiniz.</p>
   </div>
+  
+  <div class="container">
+    <!-- Bıldırcın Yumurtası -->
+    <img class="product-image" src="https://i.lezzet.com.tr/images-xxlarge-secondary/bildircin-yumurtasi-nasil-yenir-nasil-pisirilir-4380382c-5c5d-4e97-ae88-76fda3fb44b6.jpg" alt="Bıldırcın Yumurtası">
+    <div class="product-info">
+      <p>🌿 <strong>Taze Bıldırcın Yumurtası</strong></p>
+      <p><strong>Kargo:</strong> Alıcıya aittir</p>
+      <p><strong>Ürün Açıklaması:</strong> Sağlıklı ve doğal bıldırcın yumurtaları. Taze, organik ve lezzetli!</p>
+    </div>
+    <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20sipariş%20vermek%20istiyorum!" target="_blank">
+      WhatsApp ile Sipariş Ver
+    </a>
+
+    <!-- Canlı Bıldırcın -->
+    <p class="section-title">Canlı Bıldırcın</p>
+    <img class="product-image" src="https://cdn.download.ams.birds.cornell.edu/api/v2/asset/241998281/900" alt="Canlı Bıldırcın">
+    <div class="product-info">
+      <p><strong>Canlı bıldırcın için iletişime geçiniz.</strong></p>
+    </div>
+    <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20canlı%20bıldırcın%20hakkında%20bilgi%20almak%20istiyorum." target="_blank">
+      WhatsApp ile Bilgi Al
+    </a>
+  </div>
+
+  <div class="container">
+    <p class="section-title">Cins Güvercinler</p>
+    
+    <!-- Jumbo Güvercin -->
+    <div class="product-section">
+      <img class="product-image" src="https://your-image-url.com/jumbo-guvercin.jpg" alt="Jumbo Güvercin">
+      <div class="product-info">
+        <p><strong>Jumbo Güvercin</strong></p>
+        <p>Sağlam yapılı ve iri Jumbo güvercinler. Yüksek verimliliğiyle ünlüdür.</p>
+      </div>
+      <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20Jumbo%20güvercin%20almak%20istiyorum." target="_blank">
+        WhatsApp ile Satın Al
+      </a>
+      <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20Jumbo%20güvercin%20satmak%20istiyorum." target="_blank">
+        WhatsApp ile Satmak İstiyorum
+      </a>
+    </div>
+
+    <!-- Mardin Güvercini -->
+    <div class="product-section">
+      <img class="product-image" src="https://your-image-url.com/mardin-guvercini.jpg" alt="Mardin Güvercini">
+      <div class="product-info">
+        <p><strong>Mardin Güvercini</strong></p>
+        <p>Özel cins Mardin güvercini, yumuşak tüyleri ve uyumlu yapısıyla dikkat çeker.</p>
+      </div>
+      <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20Mardin%20güvercini%20almak%20istiyorum." target="_blank">
+        WhatsApp ile Satın Al
+      </a>
+      <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20Mardin%20güvercini%20satmak%20istiyorum." target="_blank">
+        WhatsApp ile Satmak İstiyorum
+      </a>
+    </div>
+
+    <!-- Jumbo Buhara Güvercini -->
+    <div class="product-section">
+      <img class="product-image" src="https://your-image-url.com/jumbo-buhara-guvercini.jpg" alt="Jumbo Buhara Güvercini">
+      <div class="product-info">
+        <p><strong>Jumbo Buhara Güvercini</strong></p>
+        <p>İri yapılı ve kuvvetli Jumbo Buhara güvercinleri. Hızlı büyür ve yüksek verim sağlar.</p>
+      </div>
+      <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20Jumbo%20Buhara%20güvercini%20almak%20istiyorum." target="_blank">
+        WhatsApp ile Satın Al
+      </a>
+      <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20Jumbo%20Buhara%20güvercini%20satmak%20istiyorum." target="_blank">
+        WhatsApp ile Satmak İstiyorum
+      </a>
+    </div>
+  </div>
+
 </body>
 </html>
