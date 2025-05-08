@@ -4,13 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emre'nin Çiftliği</title>
-    <meta name="description" content="Emre'nin ürün ve sipariş sayfası. Kaliteli üretim ve güvenilir hizmet.">
+  <meta name="description" content="Emre'nin ürün ve sipariş sayfası. Kaliteli üretim ve güvenilir hizmet.">
   <meta name="keywords" content="emre, ürün, sipariş, bıldırcın, güvercin, çiftlik, doğal">
   <meta name="author" content="Emre">
-  <title>Emre'nin Yumurtacı Çiftliği | Günlük 6000 Yumurta Üretimi</title>
-<meta name="description" content="Erzurum'da günlük 6000 adet bıldırcın yumurtası üretimi yapan Emre'nin çiftliği. Doğal, sağlıklı ve toptan yumurta satışları burada.">
-
-
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <style>
     body {
@@ -22,7 +18,7 @@
       background-size: 100px 100px;
     }
 
-    .header-wrapper, .container {
+    .header-wrapper, .container, .faq, .customer-reviews {
       width: 100%;
       max-width: 700px;
       margin: 20px auto;
@@ -82,6 +78,30 @@
       background: #1ebe5d;
     }
 
+    .faq-item {
+      margin-bottom: 20px;
+    }
+
+    .faq-question {
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
     /* === Mobil için media query === */
     @media (max-width: 600px) {
       h1 {
@@ -114,7 +134,7 @@
     <img class="product-image" src="https://i.lezzet.com.tr/images-xxlarge-secondary/bildircin-yumurtasi-nasil-yenir-nasil-pisirilir-4380382c-5c5d-4e97-ae88-76fda3fb44b6.jpg" alt="Bıldırcın Yumurtası">
     <div class="product-info">
       <p>🌿 <strong>Taze Bıldırcın Yumurtası</strong></p>
-      <p><strong>Fiyat:</strong> 50₺ / 12'li</p>
+      <p><strong>Fiyat:</strong> WhatsApp üzerinden bilgi alabilirsiniz.</p>
       <p><strong>Kargo:</strong> Alıcıya aittir</p>
       <p><strong>Ürün Açıklaması:</strong> Sağlıklı ve doğal bıldırcın yumurtaları. Taze, organik ve lezzetli!</p>
     </div>
@@ -133,29 +153,57 @@
     </a>
   </div>
 
+  <!-- Müşteri Yorumları -->
+  <div class="customer-reviews">
+    <p class="section-title">Müşteri Yorumları</p>
+    <div class="review">
+      <p><strong>Ahmet K.:</strong> Bıldırcın yumurtaları gerçekten çok kaliteli, hem lezzetli hem de taze. Gönül rahatlığıyla alabilirsiniz!</p>
+    </div>
+    <div class="review">
+      <p><strong>Ayşe T.:</strong> Mükemmel hizmet! Siparişim hızlı bir şekilde elime ulaştı, teşekkürler Emre Çiftliği!</p>
+    </div>
+    <div class="review">
+      <p><strong>Mehmet G.:</strong> Bıldırcın etini denedim, çok lezzetliydi. Sağlıklı ürünler için doğru adres!</p>
+    </div>
+    <div class="review">
+      <p><strong>Fatma S.:</strong> Hem bıldırcın yumurtası hem etinden çok memnun kaldım. Fiyatları çok uygun, herkese tavsiye ederim!</p>
+    </div>
+    <p class="section-title"><a href="yorum-birak.html">Yorumunuzu Bırakın</a></p>
+  </div>
+
+  <!-- Sıkça Sorulan Sorular -->
+  <div class="faq">
+    <p class="section-title">Sıkça Sorulan Sorular</p>
+    <div class="faq-item">
+      <p class="faq-question"><strong>Soru: Bıldırcın yumurtalarını nasıl saklamalıyım?</strong></p>
+      <p class="faq-answer">Cevap: Bıldırcın yumurtalarını buzdolabında saklamanız en iyisidir. En taze haliyle tüketebilmek için 1 hafta içinde tüketilmesi tavsiye edilir.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-question"><strong>Soru: Canlı bıldırcın almak için nasıl sipariş verebilirim?</strong></p>
+      <p class="faq-answer">Cevap: Canlı bıldırcın siparişi vermek için WhatsApp üzerinden bizimle iletişime geçebilirsiniz. Detaylı bilgi ve fiyat için sorularınızı bize yazabilirsiniz.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-question"><strong>Soru: Ürünleriniz organik mi?</strong></p>
+      <p class="faq-answer">Cevap: Evet, bıldırcınlarımız doğal yemlerle besleniyor ve organik koşullarda yetiştiriliyor.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-question"><strong>Soru: Sipariş verdikten ne kadar süre sonra teslim alabilirim?</strong></p>
+      <p class="faq-answer">Cevap: Siparişinizi aldıktan sonra, en geç 3 iş günü içerisinde teslimat yapılmaktadır. Teslimat süresi, bulunduğunuz bölgeye göre değişebilir.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-question"><strong>Soru: Bıldırcınları nasıl satın alabilirim?</strong></p>
+      <p class="faq-answer">Cevap: Bıldırcın alımı yapmak için WhatsApp üzerinden bizimle iletişime geçebilirsiniz. Fiyatlar ve detaylar hakkında size bilgi verilecektir.</p>
+    </div>
+  </div>
+
+  <!-- Bıldırcın Satışı -->
+  <p class="section-title">Bıldırcın Satışı Yapmak İsteyenler</p>
+  <div class="product-info">
+    <p><strong>Bıldırcın satışı yapmak isteyenler, WhatsApp üzerinden bizimle iletişime geçebilirler.</strong></p>
+  </div>
+  <a class="whatsapp-button" href="https://wa.me/905539210791?text=Merhaba,%20bıldırcın%20satmak%20istiyorum." target="_blank">
+    WhatsApp ile İletişime Geç
+  </a>
+
 </body>
 </html>
-<a href="hakkimda.html" class="btn">Hakkımda</a>
-
-<style>
-  .btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 16px;
-    transition: background-color 0.3s;
-  }
-
-  .btn:hover {
-    background-color: #0056b3;
-  }
-
-  body {
-    text-align: center;
-  }
-</style>
-
